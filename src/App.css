@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+
+.users{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.user{
+  border: 2px solid violet;
+  border-radius: 50px;
+  width: 400px;
+  padding: 80px;
+  bottom: 8px;
+}
+
+.form-wrapper{
+  border: 3px solid black;
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
