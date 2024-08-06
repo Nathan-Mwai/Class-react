@@ -1,10 +1,16 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Form = ({users,setUsers}) => {
+
+  const navigate = useNavigate()
+
+
   const [formData, setFormData] = useState({
     name: "",
     username: "",
   });
+
 
   const handleChange = (e) => {
     const name = e.target.name;
@@ -32,6 +38,12 @@ const Form = ({users,setUsers}) => {
       .then((res) => res.json())
       .then((user) => setUsers([user, ...users]))
       .catch((err) => console.log(err))
+
+      setFormData({
+        name: "",
+        username: ""
+      })
+      navigate("/")
   };
 
   return (

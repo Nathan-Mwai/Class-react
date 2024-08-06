@@ -10,6 +10,9 @@ function NavBar() {
       <div>
         <NavLink to="/about">About</NavLink>
       </div>
+      <div>
+      <NavLink to="/users/add">Poster User</NavLink>
+      </div>
     </div>
   );
 }
